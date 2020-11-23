@@ -1,5 +1,7 @@
 #!/bin/bash
+#This is the main menu.
 
+clear
 loop=1
 echo "Welcome to my guessing game"
 sleep 2s
@@ -17,15 +19,14 @@ do
 		echo  "[press \"Y\" to start or \"q\" to quit]"
 	fi
 	read input
-	if [[ $input != "Y" ]] && [[ $input != "y" ]] &&  [[ $input != "q" ]]
+	if [[ $input != "Y" ]] && [[ $input != "y" ]] &&  [[ $input != "q" ]] &&  [[ $input != "Q" ]]
 	then
 		wrongIn=1
-		continue
-
-	elif [[ "$input" == "Y" ]] || [[ "$input" == "y" ]]
+		
+	elif [[ $input == "Y" ]] || [[ $input == "y" ]]
 	then
 		sleep 2s
-		Questions.sh
+		bash Questions.sh
 
 	else
 		loop=0
@@ -33,6 +34,5 @@ do
 		break
 	fi
 done
-	
-#the game is complete.
-
+exit
+#main menu is complete
