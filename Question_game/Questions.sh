@@ -5,13 +5,13 @@
 clear
 echo "Type in the number which matches your answer, then press ENTER."
 echo " "
-#sleep 2s
+sleep 2s
 echo "Remember, you can enter \"Q\" to quit the game."
 echo " "
 wrong=0		#the number of times the user entered the wrong answer.
 fun1=0
 upset=0
-#sleep 1s
+sleep 1s
 
 #Question1
 echo "Question1:"
@@ -37,7 +37,7 @@ do
 done
 
 echo " "
-#sleep 1s
+sleep 1s
 
 #Question2
 echo "Question2:"
@@ -108,7 +108,7 @@ done
 fi
 
 echo " "
-#sleep 1s
+sleep 1s
 
 #Question3
 echo "Question3:"
@@ -133,7 +133,7 @@ do
 done
 
 echo " "
-#sleep 1s
+sleep 1s
 
 #Question5
 echo "Question5:"
@@ -157,6 +157,6 @@ do
 	fi
 done
 
-#sleep 1s
+sleep 1s
 
 bash score.sh
